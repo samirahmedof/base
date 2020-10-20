@@ -1,0 +1,27 @@
+.s-btn {
+    text-align: center;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    &:focus {
+        outline: none;
+    }
+    &--pr {
+        background: $p-color;
+        color: white;
+        &:hover {
+            color: white;
+        }
+    }
+
+    &--sec {
+        border: 1px solid $p-color;
+        color: $s-color;
+        &:hover {
+            color: $s-color;
+        }
+    }
+}

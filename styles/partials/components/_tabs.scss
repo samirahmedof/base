@@ -1,0 +1,46 @@
+.s-tabs {
+    &__head {
+        background: #fff;
+        padding: 16px 8px;
+        border-radius: 4px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+        li {
+            flex: auto;
+            text-align: center;
+            margin: 0 8px;
+            a {
+                display: inline-block;
+                width: 100%;
+                padding: 10px 5px;
+                transition: all .3s;
+                background: #F4F4F4;
+                border-radius: 4px;
+                color: $s-color;
+                i {
+                    margin-right: 5px;
+                }
+
+                &.active {
+                    background: $p-color;
+                    color: white;
+                    pointer-events: none;
+                }
+
+
+            }
+
+        }
+    }
+
+    &__content {
+        background: #fff;
+        border-radius: 4px;
+        padding: 16px;
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+}
