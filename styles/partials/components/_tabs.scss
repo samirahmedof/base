@@ -17,13 +17,13 @@
                 transition: all .3s;
                 background: #F4F4F4;
                 border-radius: 4px;
-                color: $s-color;
+                color: $gray;
                 i {
                     margin-right: 5px;
                 }
 
                 &.active {
-                    background: $p-color;
+                    background: $main;
                     color: white;
                     pointer-events: none;
                 }

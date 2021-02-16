@@ -10,18 +10,11 @@
         outline: none;
     }
     &--pr {
-        background: $p-color;
+        background: $main;
         color: white;
         &:hover {
             color: white;
         }
     }
 
-    &--sec {
-        border: 1px solid $p-color;
-        color: $s-color;
-        &:hover {
-            color: $s-color;
-        }
-    }
 }

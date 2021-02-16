@@ -1,26 +1,25 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
-    color: $s-color;
     font-family: $font;
     -webkit-font-smoothing: antialiased;
+    color: $black;
     background: $bg;
 }
 
 ul {
     padding: 0;
     margin: 0;
-
     li {
         list-style-type: none;
     }
 }
 
 a {
-    color: $s-color;
-    display: inline-block;
-
+    color: $black;
     &:hover {
         text-decoration: none;
-
     }
 }
 
@@ -28,39 +27,22 @@ img {
     max-width: 100%;
 }
 
-section {
-    padding: 50px 0;
-}
-
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
 }
 
-.page-link {
-    color: $p-color;
-
-    &:hover {
-        color: $dark-yellow;
-    }
-
-    &:focus {
-        box-shadow: none;
-
-    }
-}
-
 /* Track */
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px $p-color;
+    box-shadow: inset 0 0 5px $main;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: lighten($p-color, 10);
+    background: lighten($main, 10);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: darken($p-color, 10);
+    background: darken($main, 10);
 }
